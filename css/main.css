@@ -1,0 +1,583 @@
+/* ==========================================================================
+                                  Base styles:
+   ========================================================================== */
+
+html, body{
+  max-width: 100%;
+  overflow-x: hidden;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.4;
+}
+
+/* ==========================================================================
+                               Mobile Viewport Styles
+   ========================================================================== */
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img{
+  max-width: 90%;
+}
+
+input{
+  background-color: #FCC40F;
+  background-repeat: no-repeat;
+  align-self: center;
+  font-size: 80%;
+  border-radius: 1rem;
+  padding: .5rem 1.5rem;
+}
+
+/*Styles for the header area of the page*/
+.header-area {
+  background:url('../img/campus.png') no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-area .overlay{
+  background-color: rgba(26, 55, 87, 0.9);
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+
+.header-content a{
+  color: #FFFFFF;
+}
+
+.header-content h1{
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom:0;
+}
+
+.header-content h2{
+  color: #FFFFFF;
+  text-align: center;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.header-content h3{
+  color: #FFFFFF;
+  display: inline-block;
+  overflow: hidden;
+  font-weight: bold;
+  margin-top: 0;
+  letter-spacing: .30rem;
+  text-align: center;
+}
+
+.countdown-wrapper {
+  display:none;
+}
+
+/*
+* Styles for the mobile navbar.
+* Hides navlist and sets up mobile nav
+*/
+.navbar-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar-area #header-logo {
+  width: 5rem;
+  height: 5rem;
+  margin-left: 2rem;
+}
+
+.navbar-area input{
+  display: none;
+}
+
+.navbar-area nav ul {
+  display: none;
+}
+
+.menu-icon div {
+  background-color: #1A3757D9;
+  color: #fff;
+  height: 2.25rem;
+  width: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 16%;
+}
+
+.mobile-nav a.menu-icon {
+  margin-right: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#menu-links {
+  display: none;
+  flex-direction: column;
+  justify-content: start;
+  text-align: start;
+}
+
+#menu-links a{
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  text-decoration: none;
+  padding-top: 1rem;
+}
+
+/*
+* Styles for the main content area.
+* Sets image below main for mobile.
+*/
+.main-content {
+  display: flex;
+  max-width: 90%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 5rem;
+}
+
+.main-content h4{
+  margin-bottom: 0;
+}
+
+.main-content main {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.main-content article{
+  font-size: 1rem;
+  float: left;
+}
+
+.main-content main p{
+  text-align: justify-all;
+}
+
+.main-content img {
+  background: transparent no-repeat padding-box;
+  align-self: center;
+  border-radius: 20px;
+  opacity: 1;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/*
+* Styles for the additional information area
+* Hides image and sets list to center
+*/
+.additional-information{
+  background-color: #1A3757;
+  color: #FFFFFF;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.additional-information img{
+  display: none;
+}
+
+.additional-information .emphasis{
+  color: #FCC40F;
+}
+
+.additional-information li:before {
+  color: #FCC40F;
+  content:'✓';
+  margin-right: .25rem;
+}
+
+.additional-information h3{
+  text-align: center;
+}
+
+.additional-information ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+.additional-information li{
+  padding: .25rem;
+  margin-bottom: .25rem;
+}
+
+.topic-information {
+  align-self: center;
+}
+
+/*
+* Styles for the footer-header area
+* Centers the logo and links
+*/
+.footer-header {
+  background-color: #EDEDED;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-header h4{
+  font-weight: bolder;
+}
+
+.footer-header img {
+  height: 5rem;
+  width: 10rem;
+  align-self: center;
+}
+
+.footer-header ul{
+  display: block;
+  padding: 0;
+}
+
+.footer-header li {
+  list-style-type: none;
+  margin-bottom: 1rem;
+}
+
+.footer-header li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-header li a:hover {
+  color: #CDCDCD;
+}
+
+/*
+* Styles for the footer area
+*/
+.footer {
+  background-color: #EDEDED;
+  border-top: 1px solid #CDCDCD;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: bolder;
+  font-size: 1rem;
+  text-align: center;
+}
+
+
+/* ==========================================================================
+                          Desktop Media Query
+   ========================================================================== */
+
+@media screen and (min-width:1000px), print{
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input{
+    background: #FCC40F no-repeat;
+    font-size: 80%;
+    align-self: center;
+    border-radius: 1rem;
+    padding: .5rem 1.5rem;
+  }
+
+  img{
+    max-width: 100%;
+  }
+
+  /*
+  * Styles for the header area
+  */
+  .header-area {
+    background:url('../img/campus.png') no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header-area .overlay{
+    background-color: rgba(26, 55, 87, 0.7);
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .header-content a{
+    color: #FFFFFF;
+  }
+
+  .header-content h1{
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 6rem;
+    text-align: center;
+    margin-bottom:0;
+  }
+
+  .header-content h2{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .header-content h3{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 0;
+    letter-spacing: 1.5rem;
+    text-align: center;
+  }
+
+  .countdown-wrapper {
+    display:flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+  }
+
+  .countdown-chunk {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+
+  .counter-label{
+    color: #FFFFFF;
+    font-size: smaller;
+  }
+
+  .counter-value{
+    color: #FFFFFF;
+    font-weight: bolder;
+    font-size: larger;
+  }
+
+  /*
+  * Styles for the navbar including hiding the mobile-nav
+  */
+  .mobile-nav{
+    display: none;
+  }
+
+  .navbar-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navbar-area #header-logo {
+    width: 5rem;
+    height: 5rem;
+    margin-left: 2rem;
+  }
+
+  .navbar-area input{
+    background: #FCC40F no-repeat;
+    display: block;
+    border-radius: 1rem;
+    font-size: 80%;
+    margin-right: 2rem;
+    margin-left: .25em;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+
+  .navbar-area nav ul {
+    color: #FFFFFF;
+    display: flex;
+    justify-self: center;
+    text-align: center;
+  }
+
+  .navbar-area nav li {
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    border-top: none;
+    font-size: 1.25em;
+  }
+
+  .navbar-area nav li a:hover{
+    color: #b3d4fc;
+  }
+
+  .navbar-area nav li a{
+    color: #FFFFFF;
+    display: block;
+    text-align: center;
+    padding: 0.5em .25em;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+
+  /*
+   * Styles for the main-content area
+  */
+  .main-content {
+    display: flex;
+    flex-direction: row;
+    padding: 5rem;
+  }
+
+  .main-content main {
+    background-color: #FFFFFF;
+    width: 50%;
+    height: 50%;
+    flex: 50%;
+    padding: 2rem;
+  }
+
+  .main-content img {
+    background: transparent no-repeat padding-box;
+    flex: 50%;
+    width: 50%;
+    height: 50%;
+    border-radius: 16%;
+    opacity: 1;
+    padding: 2rem;
+  }
+
+  /*
+  * Styles for the additional-information area
+  */
+  .additional-information{
+    background-color: #1A3757;
+    color: #FFFFFF;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem;
+    gap:5rem;
+  }
+
+  .additional-information img{
+    max-width: 35rem;
+    max-height: 25rem;
+    display: flex;
+    margin-right: 3rem;
+    border-radius: 16%;
+    opacity: 1;
+  }
+
+  .additional-information .emphasis{
+    color: #FCC40F;
+  }
+
+ .additional-information li:before {
+   color: #FCC40F;
+   content:'✓';
+   margin-right: .25rem;
+ }
+
+  .additional-information ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+  }
+
+  .additional-information li{
+    padding: .25rem;
+  }
+
+  /*
+  * Styles for the footer-header area
+  */
+  .footer-header {
+    background-color: #EDEDED;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .footer-header h4{
+    font-weight: bold;
+    margin-right: 2rem;
+  }
+
+  .footer-header img {
+    height: 6rem;
+    width: 15rem;
+    align-self: flex-start;
+    margin-right: 2rem;
+  }
+
+  .footer-header ul{
+    display: block;
+    padding: 0;
+  }
+
+  .footer-header li {
+    list-style-type: none;
+  }
+
+  .footer-header li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+  /*
+  * Styles for the footer area
+  */
+  .footer{
+    background-color: #EDEDED;
+    border-top: 1px solid #CDCDCD;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+
+

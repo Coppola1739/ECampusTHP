@@ -1,0 +1,163 @@
+<!--
+  File Name: index.html
+  Author: Gavin Coppola
+ -->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>DLA Conference</title>
+  <meta name="description" content="Take home project for the ECampus Jr. Web Developer position.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <meta name="theme-color" content="#fafafa">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class = "container">
+  <div id = "header-area" class = "header-area">
+    <div class="overlay">
+
+      <div class = "navbar-area">
+        <img id = "header-logo" src ="img/dla-logo-white.svg" alt = "DLA Logo">
+        <nav class="navbar">
+          <ul>
+            <li><a href=#>Venue</a></li>
+            <li><a href=#>Presenter Guidelines</a></li>
+            <li><a href=#>Wagner Award</a></li>
+            <li><a href=#>Exhibitors</a></li>
+            <li><a href=#>Schedule</a></li>
+            <li><a href=#>Get in Touch</a></li>
+            <li><a href=#>Photos</a></li>
+          </ul>
+        </nav>
+
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav">
+          <a class="menu-icon" onclick="hamburger()">
+            <div>&#9776;</div>
+          </a>
+          <div id="menu-links">
+            <a href=#>Venue</a>
+            <a href=#>Presenter Guidelines</a>
+            <a href=#>Wagner Award</a>
+            <a href=#>Exhibitors</a>
+            <a href=#>Schedule</a>
+            <a href=#>Get in Touch</a>
+            <a href=#>Photos</a>
+          </div>
+        </nav>
+
+        <input class = "register-button" type="button" value="Register Today"/>
+      </div>
+
+      <div class = "header-content">
+        <h1>Distance Learning</h1>
+        <h3>Administration Conference</h3>
+        <h2>July 24 - 27, 2023 at 371 Riverview Dr, Jekyll Island, GA 31527</h2>
+        <input class = "register-button" type="button" value="Register Today"/>
+
+        <div class ="countdown-wrapper">
+          <div class="countdown-chunk">
+            <div class="counter-value" id="daysTicker"></div>
+            <div class="counter-label">Days</div>
+          </div>
+          <div class="countdown-chunk">
+            <div class="counter-value" id="hoursTicker"></div>
+            <div class="counter-label">Hours</div>
+          </div>
+          <div class="countdown-chunk">
+            <div class="counter-value" id="minutesTicker"></div>
+            <div class="counter-label">Minutes</div>
+          </div>
+          <div class="countdown-chunk">
+            <div class="counter-value" id="secondsTicker"></div>
+            <div class="counter-label">Seconds</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="main-content">
+    <main>
+      <article>
+        <h4>An event for:</h4>
+        <h3>Administration, management, planning, and evaluation of distance learning programs</h3>
+        <p>DLA will be held at the Jekyll Island Club Hotel, in Jekyll Island, Georgia on July 24 - 27, 2023.
+        The DLA symposiums are specifically designed for those involved or interested in the administration, management, planning, and evaluation of distance learning programs.
+        If you have any questions or concerns email rsmith@westga.edu or emcclain@westga.edu or call 678-839-2315.</p>
+        <p>Conference registration includes all Concurrent Sessions, Opening Dinner & Award Speakers, Monday Luncheon and Roundtables, Tuesday Evening Dinner, and Wednesday Closing Keynote Lunch.</p>
+        <p>The Distance Learning Administration Conference is sponsored by the Online Journal of Distance Learning Administration and The University of West Georgia.</p>
+      </article>
+    </main>
+    <img src="img/woman-speaker.jpg" alt = "woman speaking at podium">
+  </div>
+
+    <div class = "additional-information">
+      <img src="img/group-speaker.jpg" alt = "Group speaking at conference">
+      <div class = "topic-information">
+        <h3>Conference <span class="emphasis">Topics</span> Include</h3>
+        <ul class ="topic-information-list">
+          <li>Managing growth in distance education</li>
+          <li>Training & support for distance instructors</li>
+          <li>Support for distance students</li>
+          <li>Budget and cost-benefit of distance education </li>
+          <li>Marketing distance courses and programs</li>
+          <li>Distance learning ethics and copyright</li>
+          <li>Organizational issues in distance education </li>
+          <li>Evaluation of distance courses and programs</li>
+          <li>Striving for Excellence During a Pandemic</li>
+        </ul>
+    </div>
+    </div>
+
+  <div class = "footer-header">
+    <img src ="img/dla-logo-long.png" alt = "DLA Logo">
+    <article>
+      <h4>UWG Distance & Distributed Education Center / UWG Online</h4>
+      <p>1601 Maple Street, Carrollton, Georgia 30118</p>
+    </article>
+    <div class = "footer-past-conferences">
+      <h4>Past Conferences</h4>
+      <ul>
+        <li><a href=#>2022</a></li>
+        <li><a href=#>2021</a></li>
+        <li><a href=#>2020</a></li>
+        <li><a href=#>2019</a></li>
+        <li><a href=#>View All</a></li>
+      </ul>
+    </div>
+    <div class = "footer-site-map">
+      <h4>Site Map</h4>
+      <ul>
+        <li><a href=#>Venue</a></li>
+        <li><a href=#>Presenter Guidelines</a></li>
+        <li><a href=#>Wagner Award</a></li>
+        <li><a href=#>Exhibitors</a></li>
+        <li><a href=#>Schedule</a></li>
+        <li><a href=#>Get in Touch</a></li>
+        <li><a href=#>Photos</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class = "footer">
+    <footer>This site is a collaborative effort between USG eCampus and the University of West Georgia. All Rights Reserved.</footer>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
